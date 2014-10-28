@@ -1,5 +1,5 @@
-Ext.define('Panda.model.Song', {
+Ext.define('App.model.Song', {
     extend: 'Ext.data.Model',
-    fields: ['id', 'name', 'artist', 'album', 'played_date', 'station'],
+    fields: ['id', 'title', 'artist', 'album', 'station'],
 });
 

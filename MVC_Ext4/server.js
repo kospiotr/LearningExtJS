@@ -17,4 +17,4 @@ app.get('/sample', function (req, res) {
 // START THE SERVER
 // ==============================================
 app.listen(port);
-console.log('App started on port ' + port);
+console.log('App. started on port ' + port);

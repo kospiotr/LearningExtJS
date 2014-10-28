@@ -1,7 +1,7 @@
-Ext.define('Panda.store.Stations', {
+Ext.define('App.store.Stations', {
     extend: 'Ext.data.Store',
-    requires: 'Panda.model.Station',
-    model: 'Panda.model.Station',
+    requires: 'App.model.Station',
+    model: 'App.model.Station',
     autoLoad: true,
     proxy: {
         type: 'memory',
@@ -14,18 +14,22 @@ Ext.define('Panda.store.Stations', {
         'success': true,
         'results': [
             {
+                'id': -1,
+                'name': 'All'
+            },
+            {
                 'id': 1,
-                'played_date': 4,
-                'name': 'Led Zeppelin'
-            }, {
+                'name': 'Rock'
+            },
+            {
                 'id': 2,
-                'played_date': 3,
-                'name': 'The Rolling Stones'
-            }, {
+                'name': 'Rock & Roll'
+            },
+            {
                 'id': 3,
-                'played_date': 2,
-                'name': 'Daft Punk'
-            }]
+                'name': 'Pop'
+            }
+        ]
     }
 });
 
