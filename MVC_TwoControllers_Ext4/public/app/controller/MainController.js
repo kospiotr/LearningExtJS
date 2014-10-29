@@ -14,12 +14,12 @@ Ext.define('App.controller.MainController', {
     },
     onStationsButtonClick: function () {
         console.log('Click Stations');
-        var newView = Ext.create(this.getView('StationsGrid'));
+        var newView = this.getView('StationsGrid').create();
         this.getViewport().setActiveItem(newView);
     },
     onSongsButtonClick: function () {
         console.log('Click Songs');
-        var newView = Ext.create(this.getView('SongsGrid'));
+        var newView = this.getView('SongsGrid').create();
         this.getViewport().setActiveItem(newView);
     }
 });
